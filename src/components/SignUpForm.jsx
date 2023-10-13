@@ -8,14 +8,16 @@ export default function SignUpForm() {
     const [error, setError] = useState(null);
 
     async function handleSubmit(event) {
-        event.preventDefualt();
+        event.preventDefault();
         console.log("Hi world");
     }
 
 
 
 
-    return <h2> Sign Up!</h2>;
+    return (
+    <>
+    <h2> Sign Up!</h2>
 
     <form onSubmit={handleSubmit}>
         <label>
@@ -27,4 +29,6 @@ export default function SignUpForm() {
         <button>Submit</button>
 
     </form>
+    </>
+    )
 }
