@@ -11,4 +11,15 @@ export default function SignUpForm() {
 
 
     return <h2> Sign Up!</h2>;
+
+    <form>
+        <label>
+            Username: <input />
+        </label>
+        <label>
+            Password: <input />
+        </label>
+        <button>Submit</button>
+
+    </form>
 }
