@@ -13,6 +13,9 @@ export default function Authenticate({ token })  {
                     "Authorization": `Bearer ${token}`,
                 },
             });
+            const result = await response.json();
+
+            setSuccessMessage(result.message);
 
         } catch (error) {
             setError(error.message);
