@@ -22,7 +22,7 @@ export default function SignUpForm({ setToken }) {
 
             const result = await response.json();
             console.log(result);
-            
+
             setToken(result.token);
 
         } catch (error) {
@@ -39,7 +39,7 @@ export default function SignUpForm({ setToken }) {
             Username: <input value={username} onChange={(e) => setUsername(e.target.value)} />
         </label>
         <label>
-            Password: <input />
+            Password: <input value={password} onChange={(e) => setPassword(e.target.value)} />
         </label>
         <button>Submit</button>
 
